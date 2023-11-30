@@ -37,7 +37,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 90vh; /* Hero takes most of the viewport height */
-    background: url('tech.gif') no-repeat center center fixed;
+    background: url('Pictures/tech.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -282,12 +282,14 @@ header {
 
 .project-text {
     flex: 3; /* Allocate space for text relative to images */
+    width: 500px;
 }
 
 .project-images {
     overflow-y: auto; /* Enables vertical scrolling */
     height: 450px; /* Set a fixed height for the container */
     width: 900px; /* Set a fixed width for the container */
+    margin-left: 10rem;
 }
 
 .project-images img {
@@ -319,4 +321,21 @@ header {
     border-bottom: 2px solid #fff; /* White line below the last item */
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+
+
+.projecti-image {
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: 430px; /* Set a fixed height for the container - don't forget the 'px' */
+    width: 300px; /* Set a fixed width for the container - don't forget the 'px' */
+    margin-left: 10rem;
+}
+
+.projecti-image img {
+    width: 100%; /* Image takes the full width of the container */
+    /* Height should not be 100% for each image, or they'll each try to fill the container. */
+    /* Remove height property to allow the images to maintain their aspect ratio */
+    object-fit: cover; /* Adjusts the images to cover the area - this might clip images */
+    display: block; /* Each image is a block-level element */
+    margin-bottom: 10px; /* Adds space between images */
 }
