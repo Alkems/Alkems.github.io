@@ -1,0 +1,270 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000; /* Matching the body background */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #e81d1d; /* A bright color for active and hover states */
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Hero takes most of the viewport height */
+    background: url('tech.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.name-highlight {
+    color: #e81d1d; /* Highlight color for the name */
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #e81d1d; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e81d1d; /* Darker shade on hover */
+}
+
+
+.portfolio-section {
+    padding: 4rem 0;
+    background-color: #1a1a1a; /* Adjust background color as needed */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-item {
+    background-color: #333; /* Portfolio item background */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-item-content {
+    padding: 1rem;
+    color: #fff; /* Text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+
+/* About Me Section Styles */
+
+.about-me-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: to give a rounded corner to the image */
+}
+
+.about-me-inner {
+    display: flex;
+    align-items: flex-start; /* Align the items to the top */
+    justify-content: space-between;
+}
+
+.about-me-content {
+    flex-basis: 58%; /* Adjust the content area size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* If you want the text first even on mobile views, add this */
+    order: 1;
+}
+
+.about-me-image {
+    flex-basis: 40%; /* Adjust the image area size */
+    max-width: 40%; /* Adjust the image area size */
+    margin-left: 2rem; /* Adjust spacing as needed */
+    /* Switch the image to the right side */
+    order: 2;
+}
+
+.about-me-info {
+    /* Styles for the About Me Info */
+    margin-bottom: 2rem; /* Space between info and details */
+}
+
+.about-me-info h2 {
+    color: #e81d1d; /* Red color for the headings */
+    margin-bottom: 1rem;
+}
+
+.about-me-details .detail-item {
+    margin-bottom: 1.5rem; /* Space between each detail item */
+}
+
+.about-me-details .detail-item h3 {
+    color: #e81d1d; /* Red color for sub-headings */
+    margin-bottom: 0.5rem;
+}
+
+.language-item {
+    margin-bottom: 0.5rem; /* Space between language entries */
+}
+
+.language-name {
+    color: #e81d1d; /* Red color for language names */
+    font-weight: bold; /* Optional: makes the language name bold */
+}
+
+.language-level {
+    color: #fff; /* White text for proficiency level */
+}
+
+
+
+
+
+.education-item {
+    display: flex;
+    align-items: start; /* Align items to the top */
+    margin-bottom: 1rem;
+    gap: 1rem; /* Adds space between text and images */
+}
+
+.education-text {
+    /* Adjust the width as needed to make room for the images */
+    flex: 3; 
+}
+
+.education-images {
+    margin-left: -50rem;
+    /* Adjust the flex value as needed, so images take less space */
+    flex: 1;
+    gap: 0.5rem;
+    align-self: flex-start; /* Align images to the top */
+}
+
+.education-images img {
+    width: 100%; /* Make the images fill their container */
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+}
+
+/* White line between the two school sections */
+.education-item:not(:first-child) {
+    border-top: 2px solid #fff; /* White line */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.education-item:last-child {
+    border-bottom: 2px solid #fff; /* White line below the last item */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.section-divider {
+    width: 80%; /* Line width */
+    height: 2px; /* Line thickness */
+    background-color: #e81d1d; /* Line color */
+    align-items: center;
+    margin: 1rem auto; /* Space above and below the line */
+}
+
+
+
+
+.skills-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 4rem 0;
+}
+
+.skills-code {
+    background-color: #333; /* Dark background for the code block */
+    border: 1px solid #555; /* Border for the code block */
+    border-radius: 4px; /* Rounded corners for the code block */
+    padding: 1rem;
+    white-space: pre-wrap; /* Ensures the formatting is preserved */
+    word-wrap: break-word; /* Ensures the text wraps in the container */
+    overflow-x: auto; /* Adds a scrollbar if the content is too wide */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for the code */
+    color: #4E9A06; /* Color for the code text */
+}
+
+.skills-section h2 {
+    color: #e81d1d; /* Red color for the section heading */
+    margin-bottom: 2rem;
+}
