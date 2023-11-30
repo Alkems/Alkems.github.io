@@ -8,6 +8,11 @@ body, html {
 }
 
 header {
+    position: fixed; /* Keeps the header at the top of the viewport */
+    top: 0; /* Aligns the header to the top edge of the viewport */
+    left: 0; /* Aligns the header to the left edge of the viewport */
+    width: 100%; /* Ensures the header stretches across the full width of the viewport */
+    z-index: 1000; /* Ensures the header will stay on top of other content */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +38,7 @@ header {
 }
 
 .hero-section {
+    padding-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
