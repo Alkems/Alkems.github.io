@@ -28,6 +28,7 @@
     </div>
 
     <div class="section-divider"></div>
+
     <!-- About Me Section -->
     <section class="about-me-section">
         <div class="container">
@@ -100,28 +101,57 @@
 
     <div class="section-divider"></div>
 
-    <section class="skills-section">
+    <section class="about-me-section">
         <div class="container">
-            <h2>Skills</h2>
-            <pre class="skills-code">
-                const Kenneth = {
-                    Infotechnology: {
-                        frontEnd: ["CSS", "HTML", "JavaScript"],
-                        backEnd: ["C#", "PHP", "Python", "GDScript", "LUA"],
-                        databases: ["SQL"]
-                    },
-                    OfficeSoftware: {
-                        software: ["MS Excel", "MS Word", "MS Powerpoint", "Adobe Photoshop"],
-                    },
-                    Other: {
-                        software: ["Windows Administration", "XAMPP", "Oracle VM VirtualBox"],
-                    }
-                    strongpoint: "I consider my strongpoints in C#, GDScript, LUA and Office related Softwares."
-                };
-            </pre>
+            <div class="about-me-inner">
+                <div class="about-me-content">
+                    <div class="about-me-info">
+                        <h2>Skills</h2>
+                        <pre class="skills-code">
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var Kenneth = new
+            {
+                Infotechnology = new
+                {
+                    FrontEnd = new[] { "CSS", "HTML", "JavaScript" },
+                    BackEnd = new[] { "C#", "PHP", "Python", "GDScript", "LUA" },
+                    Databases = new[] { "SQL" }
+                },
+                OfficeSoftware = new
+                {
+                    Software = new[] { "MS Excel", "MS Word", "MS Powerpoint", "Adobe Photoshop" }
+                },
+                Other = new
+                {
+                    Software = new[] { "Windows Administration", "XAMPP", "Oracle VM VirtualBox" }
+                },
+                Strongpoint = "I consider my strongpoints in C#, GDScript, LUA and Office related Softwares."
+            };
+                            
+            Console.WriteLine("My Front-End Skills: " + string.Join(", ", Kenneth.Infotechnology.FrontEnd));
+            Console.WriteLine("My Back-End Skills: " + string.Join(", ", Kenneth.Infotechnology.BackEnd));
+            Console.WriteLine("My Office Software Skills: " + string.Join(", ", Kenneth.OfficeSoftware.Software));
+            Console.WriteLine("My other skills: " + string.Join(", ", Kenneth.Other.Software));
+            Console.WriteLine("My strongpoint: " + string.Join(", ", Kenneth.Strongpoint));
+            Console.ReadLine(); // Keep the console window open
+        }
+    }
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
+    <div class="section-divider"></div>
 
 </body>
 </html>

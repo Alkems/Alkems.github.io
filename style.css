@@ -69,6 +69,11 @@ header {
     background-color: #e81d1d; /* Darker shade on hover */
 }
 
+/* Add your responsive adjustments below */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}
+
 
 .portfolio-section {
     padding: 4rem 0;
@@ -243,28 +248,22 @@ header {
     margin: 1rem auto; /* Space above and below the line */
 }
 
-
-
-
-.skills-section {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 4rem 0;
-}
-
 .skills-code {
-    background-color: #333; /* Dark background for the code block */
-    border: 1px solid #555; /* Border for the code block */
-    border-radius: 4px; /* Rounded corners for the code block */
-    padding: 1rem;
-    white-space: pre-wrap; /* Ensures the formatting is preserved */
-    word-wrap: break-word; /* Ensures the text wraps in the container */
-    overflow-x: auto; /* Adds a scrollbar if the content is too wide */
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for the code */
-    color: #4E9A06; /* Color for the code text */
+    background-color: #282c34;
+    border: 2px solid #555;
+    border-radius: 15px;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4E9A06;
+    max-width: 100%;
+    width: 1100px; /* or 'auto' if you want it to be based on the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: left; /* Align text to the left */
 }
 
-.skills-section h2 {
-    color: #e81d1d; /* Red color for the section heading */
-    margin-bottom: 2rem;
-}
