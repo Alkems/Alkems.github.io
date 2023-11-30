@@ -11,15 +11,27 @@
         <nav class="topnav">
             <div class="logo">K-M A.</div>
             <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
             </div>
         </nav>
     </header>
 
-    <div class="hero-section">
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <div id="home" class="hero-section">
         <div class="hero-content">
             <h1>Hello, I'm <span class="name-highlight">Kenneth</span></h1>
             <p class="tagline">Developer | Designer | Video Editor </p>
@@ -30,7 +42,7 @@
     <div class="section-divider"></div>
 
     <!-- About Me Section -->
-    <section class="about-me-section">
+    <section id="about" class="about-me-section">
         <div class="container">
             <div class="about-me-inner">
                 <div class="about-me-content">
@@ -104,7 +116,7 @@
 
     <div class="section-divider"></div>
 
-    <section class="about-me-section">
+    <section id="skills" class="about-me-section">
         <div class="container">
             <div class="about-me-inner">
                 <div class="about-me-content">
@@ -156,7 +168,7 @@ namespace ConsoleApp
     
     <div class="section-divider"></div>
 
-    <section class="about-me-section">
+    <section id="projects" class="about-me-section">
         <div class="container">
             <div class="about-me-inner">
                 <div class="about-me-content">
