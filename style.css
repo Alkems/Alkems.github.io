@@ -75,11 +75,6 @@ header {
     background-color: #e81d1d; /* Darker shade on hover */
 }
 
-/* Add your responsive adjustments below */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-}
-
 
 .portfolio-section {
     padding: 4rem 0;
@@ -113,10 +108,72 @@ header {
     color: #fff; /* Text color */
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
+    /* Adjustments for the education section */
+    .education-item {
+        flex-direction: column;
+    }
+
+    .education-images {
+        margin: 0; /* Reset any negative margins */
+        max-width: 100%; /* Ensure images do not overflow */
+        overflow: hidden; /* Hide overflow */
+    }
+
+    .skills-code {
+        width: 100%; /* Full width for mobile */
+    }
+    
+    .education-images img {
+        width: 100%;
+        height: auto;
+        display: block; /* Make sure images are not set to display: none */
+    }
+
+    .skills-code, .project-text, .project-images, .projecti-image {
+        width: 100%; /* Full width to prevent overflow */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    .project-images, .projecti-image {
+        width: 100%; /* Adjust to full width */
+        margin-left: 0; /* Reset the margin */
+        height: auto; /* Adjust the height to be auto */
+    }
+
+    .project-images img, .projecti-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* General container adjustments */
     .container {
         width: 95%;
+        padding: 1rem; /* Add some padding */
+    }
+
+    /* Font size adjustments for headers */
+    .hero-content h1, .about-me-info h2, .detail-item h3 {
+        font-size: smaller; /* Adjust font size */
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .hero-content h1 {
+        font-size: 4rem; /* Even larger font for desktops */
+    }
+
+    .tagline {
+        font-size: 1.8rem;
+    }
+
+    /* Maybe a 3 columns layout for the portfolio items */
+    .portfolio-item {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -216,7 +273,6 @@ header {
 }
 
 .education-images {
-    margin-left: -50rem;
     /* Adjust the flex value as needed, so images take less space */
     flex: 1;
     gap: 0.5rem;
@@ -228,6 +284,12 @@ header {
     height: auto;
     object-fit: cover;
     border-radius: 4px; /* Optional: if you want rounded corners */
+}
+
+.education-images img, .project-images img, .projecti-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Adjust if images are being clipped in an undesirable way */
 }
 
 /* White line between the two school sections */
