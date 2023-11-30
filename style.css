@@ -238,8 +238,6 @@ header {
 }
 
 
-
-
 .section-divider {
     width: 80%; /* Line width */
     height: 2px; /* Line thickness */
@@ -267,3 +265,58 @@ header {
     text-align: left; /* Align text to the left */
 }
 
+
+
+
+
+
+
+/* New Project Section Styles */
+
+.project-item {
+    display: flex;
+    align-items: start; /* Align items to the top */
+    margin-bottom: 2rem; /* Increased space between projects */
+    gap: 1rem; /* Space between text and images */
+}
+
+.project-text {
+    flex: 3; /* Allocate space for text relative to images */
+}
+
+.project-images {
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: 450px; /* Set a fixed height for the container */
+    width: 900px; /* Set a fixed width for the container */
+}
+
+.project-images img {
+    width: 100%; /* Image takes the full width of the container */
+    height: 100%; /* Image takes the full height of the container */
+    object-fit: cover; /* Adjusts the images to cover the area */
+    display: block; /* Each image is a block-level element */
+    margin-bottom: 10px; /* Adds space between images */
+}
+
+
+
+/* New divider for project section with increased length */
+.project-section-divider {
+    width: 90%; /* Longer line width */
+    height: 2px; /* Line thickness */
+    background-color: #e81d1d; /* Line color */
+    margin: 2rem auto; /* More space above and below the line */
+}
+
+/* Apply the new styles to the project items */
+.detail-item .project-item:not(:first-child) {
+    border-top: 2px solid #fff; /* White line */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.detail-item .project-item:last-child {
+    border-bottom: 2px solid #fff; /* White line below the last item */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
