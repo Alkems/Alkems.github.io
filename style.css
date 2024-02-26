@@ -1,0 +1,117 @@
+body, html {
+    font-family: "Lora", serif;
+    background-color: #000;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.text-section {
+    color: #e81d1d;
+}
+
+/* Topnav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #e81d1d;
+}
+
+
+
+
+/* Home */
+.home-section {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: url('Pictures/tech.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.name-highlight {
+    color: #e81d1d;
+}
+
+
+
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #e81d1d;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+/* About section */
+.about-section {
+    width: 50%;
+    margin: 10%;
+}
+
+.schoolpics {
+    height: 175px;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.detail-item {
+    margin-top: 100px;
+}
+
+.about-me-details .detail-item {
+    margin-bottom: 1.5rem;
+}
+
+.about-me-details .detail-item h3 {
+    color: #e81d1d;
+    margin-bottom: 0.5rem;
+}
+
+.language-item {
+    margin-bottom: 0.5rem;
+}
+
+.language-name {
+    color: #e81d1d;
+    font-weight: bold;
+}
+
+.language-level {
+    color: #fff;
+}
