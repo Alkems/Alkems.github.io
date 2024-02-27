@@ -14,6 +14,10 @@ h1 {
     color: white;
 }
 
+h3 {
+  border-bottom: 2px solid white;
+}
+
 .text-section {
     color: #e81d1d;
 }
@@ -70,6 +74,7 @@ header {
 
 
 
+
 .section-divider {
     width: 80%;
     height: 2px;
@@ -78,26 +83,77 @@ header {
     margin: 1rem auto;
 }
 
+
+
+
 /* About section */
 .about-section {
-    width: 50%;
     margin: 10%;
+    width:  80%;
 }
 
-.schoolpics {
-    height: 175px;
-    width: 300px;
+.educationtext {
+  color: #e81d1d;
+  margin-top: 100px;
 }
 
 .AT {
     height: 150px;
-    width: 150px;
+    width:  150px;
 }
 
 .education-item {
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    display: inline-block;
     width: 50vh;
+}
+
+.schoolcard {
+  width: 375px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  display: inline-block;
+}
+.schoolcard .image-box {
+  width:  100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.schoolcard .image-box img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.schoolcard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.schoolcard:hover img {
+  filter: grayscale(1) brightness(0.15);
+}
+.schoolcard:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+.schoolcard:hover .content h2 {
+  scale:   1;
+  opacity: 1;
+}
+.schoolcard:hover .content P {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .detail-item {
@@ -125,109 +181,14 @@ header {
 .language-level {
     color: #fff;
 }
-
-.grid {
-    width: min-content;
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-auto-rows: 300px;
-    gap: 1rem;
-  }
   
-  .schoolcard {
-    aspect-ratio: 1;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-    padding: 0.5rem;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  .schoolcard-img {
-    position: absolute;
-    z-index: 1;
-    object-fit: cover;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    width:  100%;
-    height: 100%;
-  }
-  
-  .schoolcard:hover .schoolcard-img {
-    scale: 0.85;
-    filter: brightness(0.65);
-  }
-  
-  .schoolcard-box {
-    padding: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    position: relative;
-    z-index: 2;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Positioning the Boxes inside the card */
-  .box-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-content: flex-end;
-  }
-  .box-2 {
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
-    align-items: flex-end;
-  }
-  .box-3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
-    justify-content: flex-end;
-  }
-  .box-4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  
-  /* Offsetting the Boxes */
-  .top-left {
-    transform: translate(-105%, -105%);
-  }
-  .top-right {
-    transform: translate(105%, -105%);
-  }
-  .bottom-right {
-    transform: translate(105%, 105%);
-  }
-  .bottom-left {
-    transform: translate(-105%, 105%);
-  }
-  
-  .schoolcard:hover .schoolcard-box {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  
-  /* Styling the Content inside box */
-  .schoolcard-box > p {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    opacity: 0.85;
-  }
 
 
-  
+
+
 /* Skill section */
 .skill-section {
-    width: 80%;
+    width:  80%;
     margin: 10%;
 }
 
@@ -246,12 +207,12 @@ header {
     display: inline-block;
   }
   .card .image-box {
-    width: 100%;
+    width:  100%;
     height: 100%;
     border-radius: inherit;
   }
   .card .image-box img {
-    width: 100%;
+    width:  100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 90%;
@@ -280,7 +241,7 @@ header {
   .content {
     width: 80%;
     position: absolute;
-    top: 50%;
+    top:  50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -302,7 +263,7 @@ header {
     transform: translateY(50%);
   }
   .card:hover .content h2 {
-    scale: 1;
+    scale:   1;
     opacity: 1;
   }
   .card:hover .content P {
