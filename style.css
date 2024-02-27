@@ -14,10 +14,6 @@ h1 {
     color: white;
 }
 
-h3 {
-  border-bottom: 2px solid white;
-}
-
 .text-section {
     color: #e81d1d;
 }
@@ -103,10 +99,6 @@ header {
     width:  80%;
 }
 
-.educationtext {
-  color: #e81d1d;
-  margin-top: 100px;
-}
 
 .AT {
     height: 150px;
