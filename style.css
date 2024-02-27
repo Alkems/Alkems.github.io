@@ -22,10 +22,24 @@ h3 {
     color: #e81d1d;
 }
 
+.section-divider {
+  width:  80%;
+  height: 2px;
+  background-color: #e81d1d;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+
+
+
+
+
+
 /* Topnav */
 header {
     position: fixed;
-    top: 0;
+    top:  0;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -57,6 +71,10 @@ header {
 
 
 
+
+
+
+
 /* Home */
 .home-section {
     padding-top: 70px;
@@ -75,13 +93,6 @@ header {
 
 
 
-.section-divider {
-    width: 80%;
-    height: 2px;
-    background-color: #e81d1d;
-    align-items: center;
-    margin: 1rem auto;
-}
 
 
 
@@ -182,6 +193,8 @@ header {
     color: #fff;
 }
   
+
+
 
 
 
