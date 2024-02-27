@@ -87,7 +87,17 @@ header {
 .schoolpics {
     height: 175px;
     width: 300px;
+}
+
+.AT {
+    height: 150px;
+    width: 150px;
+}
+
+.education-item {
+    border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    width: 50vh;
 }
 
 .detail-item {
@@ -114,4 +124,12 @@ header {
 
 .language-level {
     color: #fff;
+}
+
+
+
+/* Skill section */
+.skill-section {
+    width: 50%;
+    margin: 10%;
 }
