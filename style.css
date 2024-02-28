@@ -67,6 +67,28 @@ header {
 
 
 
+.card.is-tapped img,
+.schoolcard.is-tapped img {
+  filter: grayscale(1) brightness(0.15);
+}
+
+.card.is-tapped::after,
+.schoolcard.is-tapped::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.card.is-tapped .content h2,
+.schoolcard.is-tapped .content h2 {
+  scale:   1;
+  opacity: 1;
+}
+
+.card.is-tapped .content p,
+.schoolcard.is-tapped .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -241,6 +263,14 @@ header {
     opacity: 1;
     inset: 20px;
   }
+
+  .card:touch img {
+    filter: grayscale(1) brightness(0.15);
+  }
+  .card:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
   
   .content {
     width: 80%;
@@ -305,7 +335,7 @@ header {
 }
 
 .project-images img {
-    width: 450px;
+    width: 1000px;
     object-fit: cover;
 }
 
