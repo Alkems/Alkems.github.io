@@ -247,7 +247,7 @@ ul {
   height: 100%;
   transition: all 400ms;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   display: flex;
   flex-direction: column;
