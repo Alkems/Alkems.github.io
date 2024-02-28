@@ -104,7 +104,6 @@ header {
 
 ul {
   display: flex;
-  gap: 1rem;
   list-style: none;
 }
 
@@ -112,7 +111,7 @@ ul {
   text-decoration: none;
   color: #fff;
   font-size: 22px;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   position: relative;
 }
 
