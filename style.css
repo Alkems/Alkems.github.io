@@ -1,5 +1,5 @@
 body, html {
-    font-family: "Lora", serif;
+    font-family: 'Halis GR', sans-serif;
     background-color: #000;
     color: #fff;
 }
@@ -111,7 +111,7 @@ header {
 }
 
 .schoolcard {
-  width: 375px;
+  width: 310px;
   aspect-ratio: 1 / 0.7;
   border-radius: 8px;
   position: relative;
@@ -199,7 +199,6 @@ header {
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 .card {
@@ -297,19 +296,17 @@ header {
   }
 
   .project-images {
-    display: flex;
-    flex-direction: column;
     overflow-y: auto;
-    gap: 20px;
-    padding: 10px;
-    height: 500px;
+    gap: 10px;
+    padding: 20px;
+    height: 600px;
+    width: auto;
     margin-bottom: 150px;
 }
 
 .project-images img {
-    width: 100%;
+    width: 450px;
     object-fit: cover;
-    height: auto;
 }
 
 
