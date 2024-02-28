@@ -227,22 +227,125 @@ ul {
 
 .about-me-details .detail-item h3 {
     color: #e81d1d;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
-.language-item {
-    margin-bottom: 0.5rem;
+
+.languagecontainer {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  transition: all 400ms;
+}
+
+.languagecard {
+  flex: 1;
+  height: 100%;
+  transition: all 400ms;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.languagecard > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.languagecard:nth-child(odd) {
+  translate: 0 -20px;
+}
+.languagecard:nth-child(even) {
+  translate: 0 20px;
+}
+
+.languagecontainer:hover .languagecard:not(:hover) {
+  filter: grayscale(100%);
+}
+.languagecard:hover {
+  flex: 3;
+}
+
+.language-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(10, 0, 66);
+  text-align: center;
+  width: 100%;
+  font-family: "Protest Guerrilla", sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.language-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  font-family: "Protest Guerrilla", sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.language-text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  font-family: "Protest Guerrilla", sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.language-text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(73, 0, 0);
+  text-align: center;
+  width: 100%;
+  font-family: "Protest Guerrilla", sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .language-name {
-    color: #e81d1d;
-    font-weight: bold;
-}
-
-.language-level {
-    color: #fff;
+  color: #e81d1d;
+  font-weight: bold;
 }
   
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #424242;
+  }
+}
+
 
 
 
