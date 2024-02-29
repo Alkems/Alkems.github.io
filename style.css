@@ -677,7 +677,15 @@ ul {
 .p3n4 {
   display: flex;
   gap: 10px;
+  margin-top: 100px;
 }
+
+@media screen and (max-width: 600px) {
+  .p3n4 {
+    display: inline-block;
+  }
+}
+
  /* Projectcard 3 section */
  .projectcard3 {
   width: 350px;
