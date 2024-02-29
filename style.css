@@ -490,3 +490,383 @@ ul {
   max-height: 500px;
   object-fit: cover;
 }
+
+.gameservers {
+  margin-top: 200px;
+}
+
+ /* Projectcard 1 section */
+.projectcard {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projectcard-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.projectcard:hover .projectcard-content {
+  transform: rotateY(180deg);
+}
+
+.projectcard-front,
+.projectcard-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.projectcard-front,
+.projectcard-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(0, 0, 0);
+}
+.projectcard-front {
+  background-image: url("../Alkems.github.io/Pictures/C1.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.projectcard-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid rgb(133, 1, 1);
+  transform: translateZ(2rem);
+}
+.title {
+  font-family: "Teko", sans-serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  transform: translateZ(4.4rem);
+  color: rgb(0, 0, 0);
+}
+.sub-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: translateZ(3rem);
+  color: rgb(0, 0, 0);
+}
+
+.projectcard-back {
+  background-image: url("../Alkems.github.io/Pictures/C2.png");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+.back-title {
+  font-family: "Teko", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+  text-transform: uppercase;
+  align-self: center;
+  transform: translateZ(2rem);
+}
+
+.projectcard-back span {
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+}
+.btn {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 2.2rem;
+  color: rgb(126, 0, 0);
+  background-color: #000;
+  border: 2px solid white;
+  border-radius: 100px;
+  text-align: center;
+  align-self: center;
+  margin-top: 1rem;
+  transform: translateZ(2rem);
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.projectcard-text {
+  font-size: 1.5rem;
+}
+
+
+ /* Projectcard 2 section */
+ .projectcard2 {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projectcard2-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.projectcard2:hover .projectcard2-content {
+  transform: rotateY(180deg);
+}
+
+.projectcard2-front,
+.projectcard2-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.projectcard2-front,
+.projectcard2-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(0, 0, 0);
+}
+.projectcard2-front {
+  background-image: url("../Alkems.github.io/Pictures/G1.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.projectcard2-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+  transform: translateZ(2rem);
+}
+
+.projectcard2-back {
+  background-image: url("../Alkems.github.io/Pictures/G2.png");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+
+.projectcard2-back span {
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+}
+
+.projectcard2-text {
+  font-size: 1.5rem;
+}
+
+
+
+.p3n4 {
+  display: flex;
+  gap: 10px;
+}
+ /* Projectcard 3 section */
+ .projectcard3 {
+  width: 350px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.projectcard3-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.projectcard3:hover .projectcard3-content {
+  transform: rotateY(180deg);
+}
+
+.projectcard3-front,
+.projectcard3-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.projectcard3-front,
+.projectcard3-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(0, 0, 0);
+}
+.projectcard3-front {
+  background-image: url("../Alkems.github.io/Pictures/I1.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.projectcard3-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+  transform: translateZ(2rem);
+}
+
+.projectcard3-back {
+  background-image: url("../Alkems.github.io/Pictures/I2.png");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+
+.projectcard3-back span {
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+}
+
+.projectcard3-text {
+  font-size: 1.5rem;
+}
+
+/* Projectcard 3 section */
+.projectcard4 {
+  width: 350px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.projectcard4-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.projectcard4:hover .projectcard4-content {
+  transform: rotateY(180deg);
+}
+
+.projectcard4-front,
+.projectcard4-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.projectcard4-front,
+.projectcard4-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(0, 0, 0);
+}
+.projectcard4-front {
+  background-image: url("../Alkems.github.io/Pictures/I3.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.projectcard4-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+  transform: translateZ(2rem);
+}
+
+.projectcard4-back {
+  background-image: url("../Alkems.github.io/Pictures/I4.png");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+
+.projectcard4-back span {
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+}
+
+/* Projectcard 5 section */
+.projectcard5 {
+  width: 350px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.projectcard5-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.projectcard5:hover .projectcard5-content {
+  transform: rotateY(180deg);
+}
+
+.projectcard5-front,
+.projectcard5-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.projectcard5-front,
+.projectcard5-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(0, 0, 0);
+}
+.projectcard5-front {
+  background-image: url("../Alkems.github.io/Pictures/I6.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.projectcard5-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid rgb(0, 0, 0);
+  transform: translateZ(2rem);
+}
+
+.projectcard5-back {
+  background-image: url("../Alkems.github.io/Pictures/I7.png");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+
+.projectcard5-back span {
+  font-weight: 600;
+  color: rgb(126, 0, 0);
+}
